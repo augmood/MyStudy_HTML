@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA_Compatible" content="IE=edge">
+    <meta name="viewpoint" content="width=device-width, initial-scale=1.0">
+    <title>선택자 2</title>
+</head>
+<body>
+    <!-- 
+        6. 후손 / 자손 선택자 : 자손 (>) , 후손 (띄어쓰기)
+        7. 동위선택자
+        : A+B, 선택자 A 바로 뒤에 있는 한개의 선택자 태그 선택
+        A~B, 선택자 A 뒤에 있는 선택자 모두 선택
+        8. 일반 구조 선택자 (구조 의사 클래스)
+            특정한 위치에 있는 태그 선택(위치로 구분)
+            1. :first-child
+            2. :last-child
+            3. :nth-child(2n)
+            4. :nth-last-child(수열)
+        9. 형태 구조 선택자
+            태그 별로 구분하여 특정한 위치에 있는 태그 선택
+            1. :first-of-type
+            2. :last-of-type
+            3. :nth-of-type(수열)
+            4. :nth-last-of-type(2n)
+        10. 반응 선택자
+            1. :active , 사용자가 클릭한 태그 선택
+            2. :hover, 사용자의 마우스가 올라가 있는 태그 선택
+        11. 상태 선택자
+            1 :checked, 체크 상태의 input 태그를 선택
+            2.:focus, 초점이 맞춰진 input 태그를 선택
+        12.속성 선택자 (selectbox의 option태그)
+            1. option:enable 
+            2. option:disable
+        13.링크 선택자 (a 태그)
+            1. :link, 방문 전
+            2. :visited, 방문 후
+
+        14.부정 선택자
+            선택자에 대해 반대로 작용하는 선택자
+            1. 태그:not(선택자) : 선택자를 제외한 나머지
+            2. 
+     -->
+    <h1>자손 / 후손 선택자</h1>
+    <style>
+        div>h1 { /*자손은 꺽쇠*/
+            background-color: hotpink;
+        }
+        div li{ /*후손은 띄어쓰기*/
+            background-color: khaki;
+        }
+        div>ul>li{ /*후손은 꺽쇠 두번도 가능*/
+            color: blue;
+        } 
+        
+        #div-test>h4 {
+            background-color: cadetblue;
+        }
+        #div-test>ul>li {
+            color: darksalmon;
+            background-color: darkseagreen;
+        }
+    </style>
+     
+     <div>
+         <h1>자손입니다.</h1>
+         <h2></h2>
+         <ul>
+             <li>후손1입니다.</li>
+             <li>후손2입니다.</li>
+        </ul>
+     </div>
+
+     <div id="div-test">
+        <h4>div의 자손1 입니다.</h4>
+        <h4>div의 자손2 입니다.</h4>
+
+        <ul id="ul-test">
+            <li>ul의 자손입니다. 동시에 div의 후손입니다.</li>
+            <li>ul의 자손입니다. 동시에 div의 후손입니다.</li>
+        </ul>    
+    </div>
+
+    <h1> 동위 선택자 </h1>
+    <style>
+        h5+p{
+            color:deepskyblue;
+        }
+        h5~p{
+            background-color: fuchsia;
+        }
+    </style>
+    <div>
+        <h4>자손1</h4>
+        <h5>자손2</h5>
+        <p>자손3</p>
+        <p>자손4</p>
+        <p>자손5</p>
+    </div>
+
+    <h1>일반 구조 선택자</h1>
+    <style>
+        #div-test1>p:first-child{
+            color: green;
+        }
+        #div-test1>p:last-child{
+            color:royalblue;
+        }
+        #div-test1>p:nth-child(3){
+            color: palevioletred;
+        }
+        #div-test1>p:nth-last-child(1){
+            color: midnightblue;
+        }
+    </style>
+    <div id="div-test1">
+        <p>테스트1-1</p>
+        <p>테스트1-2</p>
+        <p>테스트1-3</p>
+        <p>테스트1-4</p>
+        <p>테스트1-5</p>
+    </div>
+    <div id="div-test2">
+        <p>테스트2-1 입니다.</p>
+        <p>테스트2-2 입니다.</p>
+        <p>테스트2-3 입니다.</p>
+    </div>     
+
+    <h1>형태 구조 선택자</h1>
+    <style>
+        #div-test4>p:first-of-type {
+            color: olive;
+        }
+        #div-test4>p:last-of-type {
+            color:rebeccapurple;
+        }
+        #div-test4>p:nth-of-type(2) {
+            color:blue;
+        }
+    </style>
+    <div id="div-test4">
+        <p>테스트 1p 입니다.</p>
+        <h4>테스트 h1 입니다.</h4>
+        <p>테스트 2p 입니다.</p>
+        <h4>테스트 h2 입니다.</h4>
+        <p>테스트 3p 입니다.</p>
+        <h4>테스트 h3 입니다.</h4>
+        <p>테스트 4p 입니다.</p>
+        <h4>테스트 h4 입니다.</h4>
+    </div>
+
+    <hr>
+     <h1>반응 선택자</h1>
+    <style>
+        #div-test5>p:active{
+            font-size: 20px;
+            background-color: orange;
+        }
+        #div-test5-1>p:hover {
+            font-size: 30px;
+            background-color: orchid;
+        }
+    </style>
+    <div id="div-test5">
+        <p>테스트1 입니다.</p>
+        <p>테스트2 입니다.</p>
+        <p>테스트3 입니다.</p>
+    </div>  
+    <div id="div-test5-1">
+        <p>테스트4 입니다.</p>
+        <p>테스트5 입니다.</p>
+        <p>테스트6 입니다.</p>
+    </div>     
+    
+    <h1>상태 선택자</h1>
+    <style>
+        input:checked{
+            width: 20px;
+            height: 20px;
+        }
+        input[type=text]:focus {
+            background-color: orchid;
+        }
+    </style>
+    <fieldset>
+        <legend>회원 정보 입력</legend>
+        이름 : <input type="text" name="" id=""> <br>
+        나이 : <input type="text" name="" id=""> <br>
+        성별 : 
+        남자 <input type="radio" name="" id="">
+        여자 <input type="radio" name="" id="">
+        <hr>
+        취미 :
+        노래 <input type="checkbox" name="" id="">
+        수영 <input type="checkbox" name="" id="">
+        배구 <input type="checkbox" name="" id="">
+        독서 <input type="checkbox" name="" id="">
+    </fieldset>
+
+    <h1> 속성 선택자 </h1>
+    <style>
+        option:enabled{
+            color: blue;
+        }
+        option:disabled {
+            color: black;
+            background-color:red;
+        }
+    </style>
+    <fieldset>
+        <legend>회원가입 (19세 미만 가입 불가)</legend>
+        ID : <input type = "text"><br>
+        PW : <input type = "password"><br>
+        이름 : <input type = "text"><br>
+        나이 : 
+        <select>
+            <option disabled> 10대 </option>
+            <option>20대</option>
+            <option> 30대 </option>
+            <option selected> 40대 </option>
+        </select>
+    </fieldset>
+
+    <h1>링크 선택자</h1>
+    <style>
+        :link {
+            color:chartreuse;
+        }
+        :visited {
+            color:crimson;
+        }
+    </style>
+    <a href="https://www.daum.net" target="_blank"> 다음 </a>
+
+    <h1>부정 선택자</h1>
+    <style>
+        #div-test6 {
+            background-color: darkgoldenrod;
+        }
+        #div-test6>p:not(#p-tag3) {
+            color:firebrick;
+        }
+    </style>
+    <div id="div-test6"> 
+        <p id="p-tag1"> p 태그 입니다. </p>
+        <p id="p-tag2"> p 태그 입니다. </p>
+        <p id="p-tag3"> p 태그 입니다. </p>
+        <p id="p-tag4"> p 태그 입니다. </p>
+        <p id="p-tag5"> p 태그 입니다. </p>
+        <p id="p-tag6"> p 태그 입니다. </p>
+    </div>
+</body>
+</html>

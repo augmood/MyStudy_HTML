@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> 폼 관련 태그 </title>
+</head>
+<body>
+    <!--주로 회원가입 기능 구현시에 사용함-->
+    <h1> 첫 번째 폼 </h1> 
+    <form>
+        <fieldset>
+            <legend> 로그인 정보 </legend>
+            ID : <input type="text"> <br>
+            PW : <input type="password"> <br>
+            <input type="submit"> <input type="reset">
+        </fieldset>
+    </form>
+
+    <h2>두번째 폼</h2>
+    <form>
+        <fieldset>
+            text : <input type="text"><br>
+            password : <input type="password"><br>
+            submit : <input type="submit"> <br> 
+            reset : <input type="reset">
+            <hr>
+            checkbox : <input type="checkbox"><br>
+            radiobutton : <input type="radio"><br>
+            button : <input type="button">
+            <hr>
+            file : <input type="file">
+        </fieldset>
+    </form>
+
+    <h2>세번째 폼</h2>
+    <form>
+        <fieldset>
+            ID : <input type="text" value="아이디를 입력하세요"> <br>
+            PW : <input type="password" placeholder="암호를 입력하세요"> <br>
+            NAME : <input type="text" size="10" maxlength="6">
+            <input type="submit" value="로그인">
+            <input type="reset" value="취소"> <br>
+            <input type="button" value="밸류 속성 값">
+        </fieldset>
+    </form>
+
+    <h2>네번째 폼</h2>
+    <form action="send.html" method="get"> <!--값을 받아보자-->
+        <fieldset>
+            <legend>로그인 (get)</legend>
+            ID : <input type="text" name="id"> 
+            PW : <input type="password" name="pw"> <br>
+            <input type="submit" value="로그인">
+            <input type="reset" value="취소"> <br>
+        </fieldset>
+    </form>
+    <hr>
+    <form action="join.html" method="post"> <!--값을 보내보자-->
+        <fieldset>
+            <legend>회원 가입(post)</legend>
+           회원 ID : <input type="text" name="id"> <br>
+            패스워드 : <input type="password" name="pw"> <br>
+            패스워드(re) : <input type="password" name="pwre" id=""><br>
+            <input type="submit" value="회원가입">
+            <input type="reset" value="취소"> <br>
+        </fieldset>
+    </form>
+
+    <h2>다섯번째 폼 </h2>
+    <h4>체크박스와 라디오</h4>
+    <form> 
+        <fieldset>
+            <legend>좋아하는 음식 (다중선택)</legend>
+            <!--name값이 다 다른 이유 -> 다중선택으로 보내기 위해-->
+            <label> <!--버튼만 누르는게 아니라 이름을 눌러도 선택이 가능-->
+                피자 <input type="checkbox" name="pizza" value="a">
+            </label>
+            <label for=co> <!--피자에서 쓴 lable 기능을 id를 지정해둔 다른 값에도 쓴다-->
+            커피 <input type="checkbox" id="co" name="coffee" value="b">
+            떡볶이 <input type="checkbox" name="dduckbboki" value="c">
+            파스타 <input type="checkbox" name="pasta" value="d">
+        </fieldset>
+        <input type="submit" value="전송">
+        <br>
+        <fieldset>
+            <legend>취미생활</legend>
+            <!--다중 선택이 아니기 때문에 name을 통일한다-->
+            코딩 <input type="radio" name="hobby" value="a">
+            영화보기 <input type="radio" name="hobby" value="b">
+            수영 <input type="radio" name="hobby" value="c">
+            배구 <input type="radio" name="hobby" value="d">
+            <input type="color" name="colorChoice" id="">
+        </fieldset>
+        <input type="submit" value="전송">
+    </form>
+
+    <h2>여섯번째 폼</h2>
+    <form>
+        <fieldset>
+            <input type="color" name="colorChoice" id=""> <br>
+            <input type="date" name="timeChoice" id="">
+            <input type="datetime-local" name="" id="">
+            <input type="time" name="" id=""> <br>
+            <input type="search">
+            <input type="email" name="" id="">
+        </fieldset>
+    </form>
+    <br>
+    <form action="send.html" method="get">
+        <input type="text" name="" id="">
+        <input type="email" name="" id="">
+        <input type="submit">
+        </form>
+
+    <h2>일곱번째 폼</h2>
+    <form> <!--값을 받아보자-->
+        <fieldset>
+            <legend>직업을 선택하세요</legend>
+            <select size="2">
+            <option value="a">의사</option>
+            <option value="b">변호사</option>
+            <option value="c">칼럼니스트</option>
+            <option value="d">개발자</option>
+            </select>
+            <br>
+            <select>
+            <optgroup label="자바">
+                <option value="">캡슐화</option>
+                <option value="">다형성</option>
+                <option value="">상속</option>
+            </optgroup>
+            <optgroup label="배구">
+                <option value="">김연경</option>
+                <option value="">김수지</option>
+                <option value="">양효진</option>
+                <option value="">박정아</option>
+            </optgroup>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>좋아하는 브라우저를 선택하세요</legend>
+            <input type="text" list="browsers">
+            <datalist id="browsers">
+                <option value="IE"></option>
+                <option value="EDGE"></option>
+                <option value="FIREFOX"></option>
+                <option value="SAFARI"></option>
+            </datalist>
+        </fieldset>
+    </form>
+
+    <h2>여덟번째 폼</h2>
+    <!--폼 전송 방법
+        1. submit 버튼
+        2. button 버튼 -->
+    <form action="">
+        <fieldset>
+        이름 : <input type="text" name="" id="">
+        <button type="submit"><img src="../img/pika.png" width="60"></button>
+        </fieldset>
+    </form> 
+    <hr>
+    <form>
+        <input type="text" name="" id=""><br><br>
+        <textarea name="" id="" cols="70" rows="20"></textarea>
+    </form>
+    <br>
+    <br>
+    <br>
+    
+
+</body>
+</html>

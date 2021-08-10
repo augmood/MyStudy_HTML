@@ -1,0 +1,88 @@
+div {
+    width: 50px;
+    height: 50px;
+    border-width: 3px;
+}
+
+.border-test1 {
+    border-style: none;
+}
+
+.border-test2 {
+    border-style: hidden;
+    box-shadow: 5px 5px 3px 2px gray;
+}
+
+.border-test3 {
+    border-style: dotted;
+    
+}
+
+.border-test4 {
+    border-style: dashed;
+}
+
+.border-test5 {
+    border-style: double;
+}
+
+.border-test6 {
+    border-style: groove;
+    border-top-left-radius:50px
+}
+
+.border-test7 {
+  
+    border-style:inset;
+    border-bottom-right-radius:50px;
+}
+
+.border-test8 {
+  
+    border-style:outset;
+    border-top-left-radius:50px;
+    border-bottom-right-radius:50px;
+}
+
+.border-test9 {
+    border-style:ridge;
+    box-shadow:5px 5px 3px 2px gray;
+}
+
+.border-test10 {
+    border-color: cornflowerblue;
+    border-style:solid;
+    box-shadow:5px 5px 3px 2px gray;
+}
+
+table {
+    width:500px;
+    height:500px;
+}
+td{
+    border: 5px solid black;
+    border-style : dashed;
+
+
+}
+#left-top {
+    border-style : solid dashed dashed solid;
+    border-color: blue;
+    border-top-left-radius: 50px;
+}
+#right-top {
+    border-style : solid solid dashed dashed;
+    border-color: green;
+    border-top-right-radius: 50px;
+}
+#left-bottom{
+    border-style :  dashed dashed solid solid;
+    border-color:yellow;
+    border-bottom-left-radius: 50px;
+
+}
+#right-bottom{
+    border-style : dashed solid solid dashed ;
+    border-color:red;
+    border-bottom-right-radius: 50px;
+}

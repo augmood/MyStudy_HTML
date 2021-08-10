@@ -1,0 +1,47 @@
+h3 {
+    background-color: burlywood;
+}
+
+/* serif: 삐침있는 명조 계열의 글꼴
+    cursive : 손으로 쓴 것 같은 필기 계열의 글꼴
+    fantasy : 화려한 글꼴  */
+
+#ff1{font-family: 궁서체;}
+#ff2{font-family: 고딕체;}
+#ff3{font-family: 굴림체;}
+#web-font {font-family: 'Georama', sans-serif;}
+
+
+/* 
+    CSS 단위구성 
+    상대크기
+    1. em : 부모 요소의 크기가 기준(배수를 의미)
+    2. rem : 최상위 부모 요소의 크기 기준으로 배수
+    3. % : 기본 설정된 크기에서 상대적인 크기를 결정
+    절대크기
+    1. px : 기본 지정된 크기
+    2. pt : 기본 지정된 크기 (포인트)
+    참조 사이트 : http://pxtoem.com
+ */ 
+
+ #size1 {
+     font-size: 30px;
+ }
+ #size2 {
+    font-size: 2em;
+}
+#size3 {
+    font-size: 150%;
+}
+
+#fw1 {font-weight: bold;}
+#fw2 {font-weight: lighter;}
+#fw3 {font-weight: bolder;}
+
+#fv{font-variant: small-caps;}
+
+#fs1{font-style: italic;}
+#fs2{font-style: oblique;}
+
+#f1 {font: 16px / 25px "궁서체";}
+#f2 {font: italic 20px / 20px "고딕체";}

@@ -1,0 +1,80 @@
+/* 
+    색상표현
+    1. 영문색 이름 : 영문으로 색 이름 작성
+    2. 16진수표현 : RGB값 기준으로 16진수 작성
+    3. rgb/rgba :  RGB값을 0~255로 입력, a는 투명도
+                    EX) rgb(0,0,0) 검정
+*/
+
+#c-name {
+    color:cadetblue;
+}
+#c-16 {
+    color : #0000FF;
+}
+#c-rgb {
+    color:rgb(152, 207, 23);
+}
+#c-rgba {
+    color:rgba(230, 24, 144, 0.493);
+}
+
+/* 데코레이션 속성 */
+
+#td1 {
+    text-decoration: none;
+}
+#td2 {
+    text-decoration: underline;
+}
+#td3 {
+    text-decoration: line-through;
+}
+#td4 {
+    text-decoration: overline;
+}
+
+/* 트랜스폼 속성 */
+
+#tt1 {
+    text-transform: none;
+}
+#tt2 {
+    text-transform: capitalize;
+}
+#tt3 {
+    text-transform: uppercase;
+}
+#tt4 {
+    text-transform: lowercase;
+}
+
+/* 쉐도우 속성 */
+
+#bg {
+    background-color: black;
+    margin : 30px;
+    padding : 50px;
+}
+.shadow {
+    font-size : 100px;
+    line-height: 30px;
+    font-weight: 900;
+}
+
+#ts1 {
+    color:orangered;
+    text-shadow : 5px 5px orange;
+}
+#ts2 {
+    color:white;
+    text-shadow :  0px 1px 20px #fff;
+}
+#ts3 {
+    color:white;
+    text-shadow :  1px 1px 20px #6f0;
+}
+#ts4 {
+    color:white;
+    text-shadow :  0px 0px 4px #ccc, 0px -5px 4px #ff3, 2px -10px 6px #fd3, -2px -15px 11px #f80, 2px -19px 18px #f20;
+}

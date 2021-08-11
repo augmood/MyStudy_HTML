@@ -1,0 +1,25 @@
+#header{
+    height: 150px;
+    background-color:lightsalmon;
+}
+#content{
+    height: 500px;
+    background-color: lightgoldenrodyellow;
+}
+
+    #contents_layer1{
+        height: inherit;
+        width: 25%;
+        background-color: lightgoldenrodyellow;
+        float:left;
+        }
+    #contents_layer2{
+        height: inherit;
+        width: 75%;
+        background-color: lightpink;
+        float:left;
+        }
+#footer{
+    height: 150px;
+    background-color: lightsteelblue;
+}

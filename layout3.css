@@ -1,0 +1,52 @@
+#header{
+    height: 150px;
+}
+    #header_layout1{
+        height: inherit;
+        width: 30%;
+        background-color:lightsalmon;
+        float:left;
+    }
+    #header_layout2{
+        height: inherit;
+        width: 55%;
+        background-color:lightcoral;
+        float:left;
+
+    }
+    #header_layout3{
+        height: inherit;
+        width: 15%; 
+        background-color:lightpink;
+        float:left;
+    }
+#navi {
+    background-color: lavenderblush;
+    height: 40px;
+}
+
+#contents{
+    height: 300px;    
+}
+    #contents_layout1{
+        height: inherit;
+        width: 20%;
+        background-color: lightgoldenrodyellow;
+        float:left;
+        }
+    #contents_layout2{
+        height: inherit;
+        width: 60%;
+        background-color: rgb(248, 240, 169);
+        float:left;
+        }
+    #contents_layout3{
+        width: 20%;
+        height: inherit;
+        background-color: rgb(241, 231, 141);
+        float:left;
+        }
+#footer{
+    height: 150px;
+    background-color: lightblue;
+}

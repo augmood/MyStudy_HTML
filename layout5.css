@@ -1,0 +1,90 @@
+div {
+    border : 3px solid black;
+    box-sizing: border-box;  /* 보더영역을 박스로 인식시키게하기 */
+}
+
+#header{
+    height: 100px;
+    
+}
+    #header_layout1{
+        height: 100%;;
+        width: 15%;
+        float:left;
+    }
+    #header_layout2{
+        height: 100%;;
+        width: 60%;
+        float:left;
+
+    }
+    #header_layout3{
+        height: 100%;;
+        width: 25%; 
+        float:left;
+    }
+#navi {
+    height: 20px;
+}
+
+#contents{
+    height: 330px;    
+}
+    #contents_layout1{
+        height: 100%;
+        width: 20%;
+        float:left;
+        }
+    #contents_layout2{
+        height: 100%;
+        width: 50%;
+        float:left;
+        }
+    #contents_layout3{
+        width: 30%;
+        height: 100%;
+        float:left;
+        }
+        #login_header {
+            height: 50px;
+            width: 100%;
+        
+        }
+            #login_header_left {
+                height : inherit;
+                width: 60%;
+                float: left;
+            }
+                #id_field {
+                    width: 50%;
+                    height:50%;
+
+                }
+        
+                #pw_field {
+                    width: 50%;
+                    height: 50%;
+                }
+            #login_header_right {
+                height : inherit;
+                width: 40%;
+                float: left;
+            }
+                #login_btn {
+                    width: 90%;
+                    height: 90%;
+                    float: left;
+                    margin-top: 3px;
+                    margin-bottom: 6px;
+                    margin-left: 5px;
+                }
+        
+        #login_footer {
+            height: 100px;
+            width: 100%;
+            text-align : center;
+            padding-top : 5px;
+        }
+#footer{
+    height: 150px;
+}

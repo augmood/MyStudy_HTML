@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>구조적 설계 (시맨틱 태그)</title>
+    <link rel="stylesheet" type="text/css" href="../css_structure/css/layout7.css"
+</head>
+<body>
+    <header id="header">
+        <section id="h_section1">
+            <img src="../img/logo.jpg" alt="그린로고">
+        </section>
+        <section id="h_section2"> 
+            <img src="../img/mainlogo.jpg" alt="메인로고">
+        </section>
+    </header>
+    <nav>
+        <ul id ="menu">
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">PROFILE</a></li>
+            <li><a href="#">BOARD</a></li>
+            <li><a href="#">CONTRACT</a></li>
+        </ul>
+    </nav>
+    <main>
+        <aside id="aside1">
+            <img src="../img/left_img.jpg" alt="사이드 이미지">
+        </aside>
+        <section id="middle">
+            <div id="image_top">
+                <div id="i_t_left">
+                    <img class="main_img" src="../img/main_img1.jpg" alt="사이드 이미지">
+                    <div>나무를 심는 사람들</div>
+                </div>
+                <div id="i_t_right">
+                    <img class="main_img" src="../img/main_img2.jpg" alt="사이드 이미지">
+                    <div>아이들에게 녹색 미래를..</div>
+                </div>
+            </div>
+            <div id="image_bottom">
+                <div id="i_b_left">
+                    <img class="main_img" src="../img/main_img3.jpg" alt="사이드 이미지">
+                    <div>설악산을 살리는 길</div>
+                </div>
+                <div id="i_b_right">
+                    <img class="main_img" src="../img/main_img4.jpg" alt="사이드 이미지">
+                    <div>사라지는 북극곰들</div>
+                </div>
+            </div>
+        </section>
+        <aside id= "aside2">
+            <section id="aside2_login">
+                <div id="login_header">
+                    <div id="login_header_left">
+                        <div id="id_field">
+                        <input type="text" placeholder="아이디입력" size="14">
+                        </div>
+                        <div id="pw_field">
+                        <input type="password" placeholder="비밀번호입력" size="14">
+                        </div>
+                    </div>
+                    <div id="login_header_right">
+                   <button id = "login_btn">로그인</button>
+                    </div>
+                </div>
+                <div id="login_footer"> 
+                    <a href="#">회원가입</a>
+                    <a href="#">ID/PW 찾기</a>
+                </div>
+            </section>
+            <section id="banner">
+                <img src="../img/right_img.jpg" alt="">
+            </section>
+            <section id="chat">
+                <img src="../img/me_chat.jpg" alt="">
+            </section>
+        </aside>
+
+    </main>
+    <footer>
+        <img src="../img/footer.JPG" alt="하단 이미지">
+    </footer>
+</body>
+</html>

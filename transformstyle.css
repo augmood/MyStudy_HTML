@@ -1,0 +1,44 @@
+img {
+    width:500px;
+    height:350px;
+}
+/* 좌우 */
+.trans1:hover { 
+    transform : translateX(50px);
+}
+/* 위아래 */
+.trans2:hover {
+    transform : translateY(50px);
+}
+/* 대각선 */
+.trans3:hover {
+    transform : translate(50px, 50px);
+}
+/* 가로 확대 축소 */
+.trans4:hover {
+    transform : scaleX(2);
+}
+/* 세로 확대 축소 */
+.trans5:hover {
+    transform : scaleY(2);
+}
+/* 전체 확대 축소 */
+.trans6:hover {
+    transform : scale(2,2);
+}
+/* 저장한 각도 만큼 회전 */
+.trans7:hover {
+    transform: rotate(60deg);
+}
+/* 저장한 각도만큼 가로로 뒤틀기 */
+.trans8:hover {
+    transform :skewX(45deg);
+}
+/* 저장한 각도만큼 세로로 뒤틀기 */
+.trans9:hover {
+    transform :skewY(45deg);
+}
+/* 저장한 각도만큼 전체 뒤틀기 */
+.trans10:hover {
+    transform :skew(30deg,45deg);
+}

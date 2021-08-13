@@ -1,0 +1,28 @@
+img {
+    width:500px;
+    height:350px;
+}
+/* 지정한 크기만큼 x,y,z 이동 */
+.trans1:hover { 
+    transform : perspective(600px) translate3d(10px, 0px, 10px);
+}
+/* 지정한 크기만큼 Z축으로 이동</h3> */
+.trans2:hover {
+    transform : perspective(500px) translateZ(100px);
+}
+/* 지정한 크기만큼 x축 방향으로 회전 */
+.trans3:hover {
+    transform : perspective(300px) rotateX(-20deg);
+}
+/* 지정한 크기만큼 y축 방향으로 회전 */
+.trans4:hover {
+    transform : perspective(300px) rotateY(-20deg);
+}
+/* 지정한 크기만큼 z축 방향으로 회전 */
+.trans5:hover {
+    transform : perspective(300px) rotateZ(-20deg);
+}
+/* 지정한 크기만큼 x,y,z축 방향으로 회전 */
+.trans6:hover {
+    transform : perspective(600px) rotate3d(1.5,1.5,2,40deg);
+}

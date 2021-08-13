@@ -1,0 +1,87 @@
+.div1-class {
+    width: 100px;
+    height: 100px;
+    background-color: paleturquoise;
+    margin:100px;
+    animation-name: trans1;
+    animation-duration : 2s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes trans1 {
+    0% {
+        background-color: yellowgreen;
+    }
+    100% {
+        background-color: yellow;
+        border-radius: 50%;
+        transform :rotateZ(360deg);
+    }
+}
+
+.div2-class {
+    width:100px;
+    height:100px;
+    margin:100px;
+    background-color: cyan;
+    animation-name: trans2;
+    animation-duration: 2s;
+    animation-iteration-count:infinite;
+}
+
+@keyframes trans2 {
+    0% {
+        background-color: lightskyblue;
+        border-radius: 20%;
+    }
+
+    30% {
+        background-color:  lightsteelblue;
+        transform: scale(1.5);
+        border-radius: 50%;
+    }
+
+    70% {
+        background-color:cornflowerblue;
+        transform: scale(1.7);
+        border-radius: 70%;
+    }
+
+    100% {
+        background-color: blue;
+        transform: scale(2);
+        border-radius: 80%;
+    }
+}
+
+img {
+    margin-left : 100px;
+    width:400px;
+    height:300px;  
+}
+
+img:hover {
+    animation-name: trans3;
+    animation-duration : 2s; 
+    animation-iteration-count:infinite;
+    animation-direction: alternate;
+    /* 
+    normal : 처음 -> 끝
+    reverse : 끝->처음
+    alternate : 처음 -> 끝 -> 처음
+    alternate-reverse : 끝 -> 처음 -> 끝
+    */
+}
+
+@keyframes trans3 {
+    0% {
+    border : 3px dashed black;
+    }
+
+    100% {
+     border-radius: 100%;
+     transform :rotateZ(360deg);
+     border : 5px dashed black;
+    }
+
+}

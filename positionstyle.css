@@ -1,0 +1,126 @@
+.positioning {
+    border : 1px solid black;
+}
+.outer {
+    position: relative; /*여기를 시작점으로 잡는다.*/
+}
+
+/*원하는 대로 움직여보세요
+    top bottom right left
+    position을 쓰지 않을경우 static 상태이다 (써도 같음)
+    position: relative; 이걸 쓰는 곳을 기준으로 움직인다.
+    position: absolute; 부모의 위치랑 겹치게한다.
+    position:fixed; 스크롤이 움직여도 얘한테 고정이된다.
+  */
+
+.first {
+    width:300px;
+    height: 300px;
+    background-color: lavender;
+    top:10px;
+    left:10px;
+}
+.second {
+
+    width:200px;
+    height: 200px;
+    background-color: lightcoral;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
+.third {
+    width: 100px;
+    height: 100px;
+    background-color: lightgoldenrodyellow;
+    position: absolute;
+    top:0px;
+    left:0px;
+}
+
+.fixed_area {
+    width:100px;
+    height: 100px;
+    background-color: lightpink;
+    --position:fixed; 
+}
+
+.z-test {
+    width: 150px;
+    height: 100px;
+    border : 1px solid black;
+    
+}
+
+.wrap {
+    position: relative;
+}
+
+.z-test1 {
+    position: absolute;
+    background-color: blue;
+    top:100px;
+    left:100px;
+    z-index: 1000; /*숫자가 클수록 맨 앞으로 나온다*/
+}
+.z-test2 {
+    position: absolute;
+    background-color:cornflowerblue;
+    top:50px;
+    left:50px;
+    z-index: 500;
+
+}
+.z-test3 {
+    position: absolute;
+    background-color: skyblue;
+    top:0px;
+    left:0px;
+    z-index: 1px;
+}
+
+
+
+.float-test {
+    border : 1px solid black;
+    width : 100px;
+    height: 50px;
+    float: left;
+
+}
+
+.block {
+    width: 150px;
+    height: 150px;
+    border: 1px solid black;
+    color: white;
+}
+
+.area1 {
+    background-color:red;
+}
+.area2 {
+    background-color:orange;
+}
+.area3 {
+    background-color:yellow;
+}
+.area4 {
+    background-color:greenyellow;
+}
+.area5 {
+    background-color:blue;
+}
+
+.block-test1 {
+    display: inline; /*인라인 속성으로 바꾸기*/
+}
+
+.block-test2 {
+    display: inline-block; /*블록 속성으로 바꾸기*/
+}
+
+.block-test3 {
+    display: block; /*블록 속성으로 바꾸기*/
+}
